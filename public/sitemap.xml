@@ -1,69 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>
-            http://www.gerlandopiro.com/2013/01/27/starting-the-5-dollars-web-app-challenge/
-        </loc>
-        <lastmod>2013-03-06T22:33:34-08:00</lastmod>
+        <loc>http://www.emailsforbreakfast.com/about/</loc>
+        <lastmod>2013-04-23T09:02:41-07:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://www.gerlandopiro.com/2013/02/04/minimalist-blogging-with-ia-writer-octopress-and-s3/
-        </loc>
-        <lastmod>2013-03-06T22:35:58-08:00</lastmod>
+        <loc>http://www.emailsforbreakfast.com/blog/archives/</loc>
+        <lastmod>2013-04-23T09:02:41-07:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://www.gerlandopiro.com/2013/02/06/do-we-need-yet-another-stripe-checkout-app/
-        </loc>
-        <lastmod>2013-03-06T22:35:28-08:00</lastmod>
+        <loc>http://www.emailsforbreakfast.com/colophon/</loc>
+        <lastmod>2013-04-23T09:02:41-07:00</lastmod>
     </url>
     <url>
-        <loc>http://www.gerlandopiro.com/2013/02/16/overcoming-introversion-through-writing/</loc>
-        <lastmod>2013-03-06T22:34:57-08:00</lastmod>
+        <loc>http://www.emailsforbreakfast.com/contact/</loc>
+        <lastmod>2013-04-23T09:02:41-07:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://www.gerlandopiro.com/2013/02/27/lesson-learned-one-month-into-the-5-dollars-web-app-challenge/
-        </loc>
-        <lastmod>2013-03-06T22:32:39-08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/2013/03/07/gems-to-use-when-crafting-a-rails-mvp/</loc>
-        <lastmod>2013-03-08T10:05:28-08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://www.gerlandopiro.com/2013/03/13/did-refer-dot-ly-pivot-out-of-zombie-startup-status/
-        </loc>
-        <lastmod>2013-03-13T09:09:29-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/2013/03/23/your-pitch-sucks/</loc>
-        <lastmod>2013-03-23T23:01:58-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/2013/04/16/lessconf-2013-how-less-was-more/</loc>
-        <lastmod>2013-04-18T00:08:38-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/about/</loc>
-        <lastmod>2013-03-30T19:07:55-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/blog/archives/</loc>
-        <lastmod>2013-04-18T00:08:38-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/colophon/</loc>
-        <lastmod>2013-02-07T20:34:01-08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/contact/</loc>
-        <lastmod>2013-02-07T20:34:01-08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.gerlandopiro.com/</loc>
-        <lastmod>2013-04-18T00:08:38-07:00</lastmod>
+        <loc>http://www.emailsforbreakfast.com/</loc>
+        <lastmod>2013-04-24T21:44:44-07:00</lastmod>
     </url>
 </urlset>

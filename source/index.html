@@ -1,28 +1,226 @@
 ---
-layout: default
+layout: minimal
 ---
-
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
+<div class="header">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+          <h1><span>Emails for Breakfast</span></h1>
+          <h2>Sunshine for your inbox, delivered once a week.</h2>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span8 offset2">
+      <div class="row-fluid">
+        <div class="span6">
+          <h4>A weekly handcrafted message of inspiring articles for bootstrappers, creatives, and dreamers.</h4>
+          <p>
+            Ever start your weekend and notice that your inbox is full of crap and all the news is negative?
+            Carving your own path is hard and keeping the right mindset is key to staying motivated.
+          </p>
+          <p>
+            Emails for Breakfast is a personal effort to share the positive, inspiring, and just plain cool stuff that's going on in the world.
+          </p>
+        </div>
+
+        <div class="span6 well">
+          <h4>Try it, you'll like it!</h4>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup" class="row-fluid">
+            <form action="http://gerlandopiro.us1.list-manage2.com/subscribe/post?u=7d0c17c021dcca63f41dc9699&amp;id=f1a06dc732" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div>
+                <span class="mc-field-group">
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email Address">
+                </span>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+              </div>
+              <div>
+                <input type="submit" value="Join Us!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning">
+              </div>
+            </form>
+          </div>
+          <script type="text/javascript">
+          var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';
+          try {
+              var jqueryLoaded=jQuery;
+              jqueryLoaded=true;
+          } catch(err) {
+              var jqueryLoaded=false;
+          }
+          var head= document.getElementsByTagName('head')[0];
+          if (!jqueryLoaded) {
+              var script = document.createElement('script');
+              script.type = 'text/javascript';
+              script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+              head.appendChild(script);
+              if (script.readyState && script.onload!==null){
+                  script.onreadystatechange= function () {
+                        if (this.readyState == 'complete') mce_preload_check();
+                  }    
+              }
+          }
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+          head.appendChild(script);
+          var err_style = '';
+          try{
+              err_style = mc_custom_error_style;
+          } catch(e){
+              err_style = '';
+          }
+          var head= document.getElementsByTagName('head')[0];
+          var style= document.createElement('style');
+          style.type= 'text/css';
+          if (style.styleSheet) {
+            style.styleSheet.cssText = err_style;
+          } else {
+            style.appendChild(document.createTextNode(err_style));
+          }
+          head.appendChild(style);
+          setTimeout('mce_preload_check();', 250);
+
+          var mce_preload_checks = 0;
+          function mce_preload_check(){
+              if (mce_preload_checks>40) return;
+              mce_preload_checks++;
+              try {
+                  var jqueryLoaded=jQuery;
+              } catch(err) {
+                  setTimeout('mce_preload_check();', 250);
+                  return;
+              }
+              try {
+                  var validatorLoaded=jQuery("#fake-form").validate({});
+              } catch(err) {
+                  setTimeout('mce_preload_check();', 250);
+                  return;
+              }
+              mce_init_form();
+          }
+          function mce_init_form(){
+              jQuery(document).ready( function($) {
+                var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+                var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+                $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+                options = { url: 'http://gerlandopiro.us1.list-manage2.com/subscribe/post-json?u=7d0c17c021dcca63f41dc9699&id=f1a06dc732&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                              beforeSubmit: function(){
+                                  $('#mce_tmp_error_msg').remove();
+                                  $('.datefield','#mc_embed_signup').each(
+                                      function(){
+                                          var txt = 'filled';
+                                          var fields = new Array();
+                                          var i = 0;
+                                          $(':text', this).each(
+                                              function(){
+                                                  fields[i] = this;
+                                                  i++;
+                                              });
+                                          $(':hidden', this).each(
+                                              function(){
+                                                  var bday = false;
+                                                  if (fields.length == 2){
+                                                      bday = true;
+                                                      fields[2] = {'value':1970};//trick birthdays into having years
+                                                  }
+                                                if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                                  this.value = '';
+                                } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                                  this.value = '';
+                                } else {
+                                    if (/\[day\]/.test(fields[0].name)){
+                                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+                                    } else {
+                                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                                    }
+                                                }
+                                              });
+                                      });
+                                  return mce_validator.form();
+                              }, 
+                              success: mce_success_cb
+                          };
+                $('#mc-embedded-subscribe-form').ajaxForm(options);
+                
+                
+              });
+          }
+          function mce_success_cb(resp){
+              $('#mce-success-response').hide();
+              $('#mce-error-response').hide();
+              if (resp.result=="success"){
+                  $('#mce-'+resp.result+'-response').show();
+                  $('#mce-'+resp.result+'-response').html(resp.msg);
+                  $('#mc-embedded-subscribe-form').each(function(){
+                      this.reset();
+                });
+              } else {
+                  var index = -1;
+                  var msg;
+                  try {
+                      var parts = resp.msg.split(' - ',2);
+                      if (parts[1]==undefined){
+                          msg = resp.msg;
+                      } else {
+                          i = parseInt(parts[0]);
+                          if (i.toString() == parts[0]){
+                              index = parts[0];
+                              msg = parts[1];
+                          } else {
+                              index = -1;
+                              msg = resp.msg;
+                          }
+                      }
+                  } catch(e){
+                      index = -1;
+                      msg = resp.msg;
+                  }
+                  try{
+                      if (index== -1){
+                          $('#mce-'+resp.result+'-response').show();
+                          $('#mce-'+resp.result+'-response').html(msg);            
+                      } else {
+                          err_id = 'mce_tmp_error_msg';
+                          html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                          
+                          var input_id = '#mc_embed_signup';
+                          var f = $(input_id);
+                          if (ftypes[index]=='address'){
+                              input_id = '#mce-'+fnames[index]+'-addr1';
+                              f = $(input_id).parent().parent().get(0);
+                          } else if (ftypes[index]=='date'){
+                              input_id = '#mce-'+fnames[index]+'-month';
+                              f = $(input_id).parent().parent().get(0);
+                          } else {
+                              input_id = '#mce-'+fnames[index];
+                              f = $().parent(input_id).get(0);
+                          }
+                          if (f){
+                              $(f).append(html);
+                              $(input_id).focus();
+                          } else {
+                              $('#mce-'+resp.result+'-response').show();
+                              $('#mce-'+resp.result+'-response').html(msg);
+                          }
+                      }
+                  } catch(e){
+                      $('#mce-'+resp.result+'-response').show();
+                      $('#mce-'+resp.result+'-response').html(msg);
+                  }
+              }
+          }
+
+          </script>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
